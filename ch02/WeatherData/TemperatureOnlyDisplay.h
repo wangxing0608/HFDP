@@ -14,7 +14,7 @@ namespace weather
     using std::cout;
     using std::endl;
 
-class TemperatureOnlyDisplay: Observer, public DisplayElement
+class TemperatureOnlyDisplay: public Observer, public DisplayElement
 {
 public:
     TemperatureOnlyDisplay(WeatherData *wd)
@@ -40,7 +40,7 @@ private:
     WeatherData *weatherData;
     int temp;
     int humidity;
-    int presure;
+    int pressure;
 };
 }
 #endif //HFDP_TEMPERATUREONLYDISPLAY_H

@@ -71,7 +71,7 @@ public:
     {
         temp = t;
         humidity = h;
-        pressure = 3;
+        pressure = p;
         measurementChanged();
     }
 
